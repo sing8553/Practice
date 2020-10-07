@@ -28,7 +28,7 @@
                             home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"> <span
                                 class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg "></span> Menu</a>
+                    <li class="nav-item"><a class="nav-link" href="temp.html"><span class="fa fa-list fa-lg "></span> Menu</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
@@ -80,6 +80,101 @@
         </div>
     </div>
 
+    <div class="modal fade" id="ReserveTable" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">
+                        Reserve a Table
+                    </h2>
+                    <button class="ml-auto close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group row">
+                            <label for="numberOfGuest" class="col-form-label col-sm-2">
+                                Number Of Guest </label>
+                            <div class="col-sm">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="seats" id="1"
+                                    class="form-check-input">
+                                    <label class="form-check-label"> 1</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="seats" id="2"
+                                    class="form-check-input">
+                                    <label class="form-check-label"> 2</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="seats" id="3"
+                                    class="form-check-input">
+                                    <label class="form-check-label"> 3</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="seats" id="4"
+                                    class="form-check-input">
+                                    <label class="form-check-label"> 4</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="seats" id="5"
+                                    class="form-check-input">
+                                    <label class="form-check-label"> 5</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="seats" id="6"
+                                    class="form-check-input">
+                                    <label class="form-check-label"> 6</label>
+                                </div>
+
+                            </div>  
+                            
+                        </div>
+                        <div class="form-group row">
+                            <label for="" class="col-form-label col-sm-2">Section </label>
+                            <div class="col-10">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label  class="btn btn-danger active">
+                                        <input type="radio" name="smoke" id="option1" checked >Smoking
+                                    </label>
+                                    <label for="" class="btn btn-success">
+                                        <input type="radio" name="smoke" id="option2">Non-smoking
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+
+                        <div class="form-group row">
+                            <label for="dateAndTime" class="col-form-label col-sm-2">
+                                Date and Time </label>
+                            <div class="col-sm-4">
+                                <input class="form-control" placeholder = "Date" type = "text" id = "date">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" name="" id="time"
+                                class="form-control" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn btn-primary btn-lg ml-auto" >Sign In</button>
+                            <button class="btn btn-secondary btn-lg ml-2" data-dismiss="modal">Cancel</button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -92,9 +187,8 @@
                     <img src="images/img/logo.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-sm-3 align-self-center col-12">
-                    <a href="" role="button" class="btn btn-block btn-warning btn-sm nav-link text-light"
-                    data-toggle="tooltip" data-html="true" title="or Call us at  <br><strong>xxx-xxx-xxxx </strong>"
-                        data-placement="bottom">Reverse Table</a>
+                    <a href="#ReserveTable" role="button" class="btn btn-block btn-warning btn-sm nav-link text-light"
+                    data-toggle="modal" data-target="#ReserveTable">Reverse Table</a>
                 </div>
             </div>
         </div>
@@ -238,74 +332,7 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-8 offset-sm-2">
-                <div class="card">
-                    <h3 class="card-header bg-warning">
-                        Reserve a Table
-                    </h3>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="form-group row">
-                                <label for="numberOfGuest" class="col-form-label col-sm-2">
-                                    Number Of Guest </label>
-                                <div class="col-sm">
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" name="seats" id="1"
-                                        class="form-check-input">
-                                        <label class="form-check-label"> 1</label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" name="seats" id="2"
-                                        class="form-check-input">
-                                        <label class="form-check-label"> 2</label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" name="seats" id="3"
-                                        class="form-check-input">
-                                        <label class="form-check-label"> 3</label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" name="seats" id="4"
-                                        class="form-check-input">
-                                        <label class="form-check-label"> 4</label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" name="seats" id="5"
-                                        class="form-check-input">
-                                        <label class="form-check-label"> 5</label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" name="seats" id="6"
-                                        class="form-check-input">
-                                        <label class="form-check-label"> 6</label>
-                                    </div>
-
-                                </div>  
-                                
-                            </div>
-                            <div class="form-group row">
-                                <label for="dateAndTime" class="col-form-label col-sm-2">
-                                    Date and Time </label>
-                                <div class="col-sm-4">
-                                    <input class="form-control" placeholder = "Date" type = "text" id = "date">
-                                </div>
-                                <div class="col-sm-4">
-                                    <input type="text" name="" id="time"
-                                    class="form-control" placeholder="Time">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        
 
     </div>
 
